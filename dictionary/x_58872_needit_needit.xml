@@ -2,6 +2,7 @@
     <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
         <element label="Other" max_length="40" name="other" type="string"/>
         <element label="Requested for" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Requested for email" mandatory="true" max_length="40" name="requested_for_email" type="string"/>
         <element choice="1" default="facilities" label="Request Type" mandatory="true" max_length="40" name="request_type" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Facilities" sequence="0" value="facilities"/>
